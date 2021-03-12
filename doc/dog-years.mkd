@@ -1,50 +1,15 @@
-## Piecewise Function
+# Fitting Human Equivalent to Dog Years
+...
+title: Fitting Human Equivalent to Dog Years
+---
 
-$$ f(x) = \begin{cases}
-ax + b, \textrm{ if } k \lt x,\\
-sx^2 + tx + u, \textrm{ if } 0 \lt x \le k \\
-0, \textrm{ if } x = 0
-\end{cases} $$
+## Introduction
 
-To satasfy the third case we must have $u=0$.
+Fun numerical problems can turn up just about anywhere. Nestlé Purina [@purinaDogCalculatorN/D] has calculators that convert from pet to human equivalent years old. They state that
 
-We want the function $f(x)$ to be continous at $k$.
+>A popular way to calculate your dog’s age is to multiply his age by seven. Breed size can impact development, though, so this equation isn’t always accurate.
 
-$$ ak+b = sk^2+tk+u $$
+The Toy Dog Data shows the most deviation from a linear approximation. Therefore, we will use it as an example.
 
-We also want the first derivitive of $f(x)$ to be continous at $k$.
-
-$$ a = 2sk + t $$
-
-We can fit $a$ and $b$ with least squares between $k$ and $x_{max}$.
-
-Multiply the first derivitive equation by $k$.
-
-$$ ak+b = sk^2 + tk $$
-$$ ak = 2sk^2 + tk $$
-
-Subtract the second equation from the first.
-
-$$ b = -sk^2 $$
-
-Solve for $s$:
-
-$$ s = \frac{1}{2} \frac{b}{k} $$
-
-Now substitute $s$ into the first deritive equation.
-
-$$ a = 2 \frac{1}{2} \frac{b}{k} + t $$
-
-Solve for t
-
-$$ t = \frac{ak}{b} $$
-
-**Note:** The quadratic equation is completely specified by the constraints of the problem with the slope and intercept of the streight line.
-
-
-
-
-
-
-
+![Toy Dog Data with Linear Fit. The description.](../art/Toy-Dog-Age-with-Linear-Fit.png)
 

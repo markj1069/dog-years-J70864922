@@ -1,0 +1,9 @@
+12 MAR 2021
+
+Abandon this project.
+
+After talking with Al Beyerle, we realized the data was a linear fit with integer arithmatic.
+
+No need for a better fit.
+
+--Mark
